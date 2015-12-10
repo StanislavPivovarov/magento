@@ -8,7 +8,7 @@
         <helpers>
             <contacts>
                 <rewrite>
-                    <data><Ainstainer_Contacts_Helper_Da></Ainstainer_Contacts_Helper_Da>ta</data> <!-- Кажется у тебя тут ошибка -->
+                    <data><Ainstainer_Contacts_Helper_Data></Ainstainer_Contacts_Helper_Data></data>
                 </rewrite>
             </contacts>
         </helpers>
