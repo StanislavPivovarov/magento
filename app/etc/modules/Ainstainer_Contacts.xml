@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Ainstainer_Contacts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ainstainer_Contacts>
+    </modules>
+</config>

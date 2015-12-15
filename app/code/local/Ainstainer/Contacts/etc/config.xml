@@ -1,0 +1,16 @@
+<config>
+    <modules>
+        <Ainstainer_Contacts>
+            <version>0.6.0</version>
+        </Ainstainer_Contacts>
+    </modules>
+    <global>
+        <helpers>
+            <contacts>
+                <rewrite>
+                    <data>Ainstainer_Contacts_Helper_Data</data>
+                </rewrite>
+            </contacts>
+        </helpers>
+    </global>
+</config>
