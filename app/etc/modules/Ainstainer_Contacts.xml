@@ -3,6 +3,9 @@
         <Ainstainer_Contacts>
             <active>true</active>
             <codePool>local</codePool>
+            <depends>
+                <Mage_Contacts/>
+            </depends>
         </Ainstainer_Contacts>
     </modules>
 </config>
