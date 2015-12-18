@@ -6,6 +6,11 @@
     </modules>
     <global>
         <helpers>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Helper</class>
+            </ainstainer_contacts>
+        </helpers>
+        <helpers>
             <contacts>
                 <rewrite>
                     <data>Ainstainer_Contacts_Helper_Data</data>

@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Ainstainer_Homepage>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Ainstainer_Contacts/>
+            </depends>
+        </Ainstainer_Homepage>
+    </modules>
+</config>

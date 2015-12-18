@@ -24,6 +24,11 @@
                 <name>js/bootstrap.min.js</name>
             </action>
 
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/google_map_contact.js</name>
+            </action>
+
             <action method="addCss">
                 <stylesheet>css/bootstrap.min.css</stylesheet>
             </action>
@@ -36,6 +41,9 @@
         </reference>
 
         <reference name="content">
+            <block type="cms/block" name="ainstainer_address" before="-">
+                <action method="setBlockId"><block_id>ainstainer_address</block_id></action>
+            </block>
             <block type="core/template" name="custom_contacts" template="ainstainer/contacts.phtml"/>
         </reference>
     </ainstainer_contacts_index_index>

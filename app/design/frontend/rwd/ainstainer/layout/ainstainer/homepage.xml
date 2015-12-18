@@ -1,0 +1,18 @@
+<layout>
+    <cms_index_index>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>css/ainstainer.css</stylesheet>
+            </action>
+        </reference>
+
+        <reference name="content">
+            <block type="ainstainer_homepage/homepage" name="homepage_banners" template="ainstainer/banners.phtml" />
+            <block type="ainstainer_homepage/product_mostviewed" name="homepage_mostviewed" template="ainstainer/product/mostviewed.phtml" />
+        </reference>
+    </cms_index_index>
+</layout>
+
+
+
+
