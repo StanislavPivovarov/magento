@@ -4,6 +4,8 @@
 class Ainstainer_Contacts_Helper_Data extends Mage_Contacts_Helper_Data
 {
 
+    protected $_googleApiKey = 'AIzaSyBLT0UNe9j_gYquhx_vdMX4U5r-qQ4IUuA';
+
     /**
      * Rewrite Mage_Contacts_Helper_Data
      *
@@ -20,5 +22,15 @@ class Ainstainer_Contacts_Helper_Data extends Mage_Contacts_Helper_Data
 
         return $result;
 
+    }
+
+    /**
+     * Return GoogleApiKey for map
+     *
+     * @return string
+     */
+    public function getGoogleApiKey()
+    {
+        return $this->_googleApiKey;
     }
 }

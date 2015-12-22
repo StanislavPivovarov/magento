@@ -1,0 +1,23 @@
+<config>
+    <modules>
+        <Ainstainer_homepage>
+            <version>0.6.0</version>
+        </Ainstainer_homepage>
+    </modules>
+    <global>
+        <blocks>
+            <ainstainer_homepage>
+                <class>Ainstainer_Homepage_Block</class>
+            </ainstainer_homepage>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ainstainer_homepage>
+                    <file>ainstainer/homepage.xml</file>
+                </ainstainer_homepage>
+            </updates>
+        </layout>
+    </frontend>
+</config>
