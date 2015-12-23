@@ -51,4 +51,14 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template
                             +PC9zdmc+';
         }
     }
+
+    /**
+     * Retrieve all active images
+     *
+     * @return mixed
+     */
+    public function images()
+    {
+        return Mage::getModel('ainstainer/banner')->getCollection()->getAllActiveImages();
+    }
 }

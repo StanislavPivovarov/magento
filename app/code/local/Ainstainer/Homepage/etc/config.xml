@@ -1,10 +1,31 @@
 <config>
     <modules>
-        <Ainstainer_homepage>
+        <Ainstainer_Homepage>
             <version>0.6.0</version>
-        </Ainstainer_homepage>
+        </Ainstainer_Homepage>
     </modules>
     <global>
+        <models>
+            <ainstainer>
+                <class>Ainstainer_Homepage_Model</class>
+                <resourceModel>banner_resource</resourceModel>
+            </ainstainer>
+            <banner_resource>
+                <class>Ainstainer_Homepage_Model_Resource</class>
+                <entities>
+                    <banner>
+                        <table>homepage_banner</table>
+                    </banner>
+                </entities>
+            </banner_resource>
+        </models>
+        <resources>
+            <banner_setup>
+                <setup>
+                    <module>Ainstainer_Homepage</module>
+                </setup>
+            </banner_setup>
+        </resources>
         <blocks>
             <ainstainer_homepage>
                 <class>Ainstainer_Homepage_Block</class>
