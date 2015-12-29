@@ -41,7 +41,7 @@ class Ainstainer_Contacts_Adminhtml_FeedbackController extends Mage_Adminhtml_Co
      * Save Feedback
      */
     public function saveAction()
-    { var_dump('ololol');die;
+    {
         if ($data = $this->getRequest()->getPost()) {
             try {
                 $model = Mage::getModel('ainstainer_contacts/feedback');

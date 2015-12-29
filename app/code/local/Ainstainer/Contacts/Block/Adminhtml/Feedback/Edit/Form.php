@@ -15,9 +15,9 @@ class Ainstainer_Contacts_Block_Adminhtml_Feedback_Edit_Form extends Mage_Adminh
         $model = Mage::registry('current_feedback');
 
         $form = new Varien_Data_Form(array(
-            'id' => 'feedback_edit',
+            'id' => 'edit_form',
             'action' => $this->getUrl('*/*/save', array(
-                'id' => $this->getRequest()->getParam('feedback_id')
+                'id' => $this->getRequest()->getParam('id')
             )),
             'method' => 'post',
         ));
