@@ -59,6 +59,16 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template
      */
     public function images()
     {
-        return Mage::getModel('ainstainer/banner')->getCollection()->getAllActiveImages();
+        return Mage::getModel('ainstainer/banner')
+            ->getCollection()
+            ->getAllActiveImages();
+    }
+
+    public function productBanners()
+    {
+//       return Mage::getModel('catalog/product')
+//                 ->getCollection()
+//                 ->joinAttribute('carousel_id')
+//                 ->joinTable(['alias' =>'ainstainer/banner'], 'alias.carousel_id=banner_id', ['url', 'title'], null, 'inner');
     }
 }
