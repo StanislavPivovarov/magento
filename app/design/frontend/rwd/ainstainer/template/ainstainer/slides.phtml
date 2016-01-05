@@ -1,5 +1,5 @@
 <div class="fotorama" data-width="800" data-height="600">
-    <?php foreach($this->images() as $image):?>
-        <img alt="" src="<?php echo Mage::getBaseUrl('media') . $image->url ?>" " />
+    <?php foreach($this->productBanners() as $product):?>
+        <img alt="" src="<?php echo Mage::getBaseUrl('media') . $product->banner ?>" " />
     <?php endforeach ?>
 </div>

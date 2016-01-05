@@ -64,11 +64,19 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template
             ->getAllActiveImages();
     }
 
+    /**
+     * Retrieve Banners Url With products witch have it
+     *
+     * @return mixed
+     */
     public function productBanners()
     {
-//       return Mage::getModel('catalog/product')
-//                 ->getCollection()
-//                 ->joinAttribute('carousel_id')
-//                 ->joinTable(['alias' =>'ainstainer/banner'], 'alias.carousel_id=banner_id', ['url', 'title'], null, 'inner');
+        return Mage::getResourceModel('catalog/product_collection')
+                 ->joinField('banner',
+                   'homepage_banner',
+                   'url',
+                     'banner_id=entity_id',
+                   null,
+                   'right');
     }
 }
