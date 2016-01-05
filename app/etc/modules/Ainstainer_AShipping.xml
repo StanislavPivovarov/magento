@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Ainstainer_AShipping>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Shipping/>
+            </depends>
+        </Ainstainer_AShipping>
+    </modules>
+</config>

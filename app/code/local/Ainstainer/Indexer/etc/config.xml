@@ -1,0 +1,22 @@
+<config>
+    <modules>
+        <Ainstainer_Indexer>
+            <version>0.6.0</version>
+        </Ainstainer_Indexer>
+    </modules>
+
+    <global>
+        <models>
+            <test_idexer>
+                <class>Ainstainer_Indexer_Indexer</class>
+            </test_idexer>
+        </models>
+        <index>
+            <indexer>
+                <ainstainer_indexer>
+                    <model>test_idexer/indexer</model>
+                </ainstainer_indexer>
+            </indexer>
+        </index>
+    </global>
+</config>
