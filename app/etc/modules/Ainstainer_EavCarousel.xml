@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Ainstainer_EavCarousel>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ainstainer_EavCarousel>
+    </modules>
+</config>

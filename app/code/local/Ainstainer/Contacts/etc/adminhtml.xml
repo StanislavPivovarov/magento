@@ -1,0 +1,13 @@
+<config>
+    <menu>
+        <cms>
+            <children>
+                <ainstainer_contacts  module="ainstainer_contacts">
+                    <sort_order>10</sort_order>
+                    <title>Feedback - Ainstainer</title>
+                    <action>feedback_admin/adminhtml_feedback/</action>
+                </ainstainer_contacts>
+            </children>
+        </cms>
+    </menu>
+</config>

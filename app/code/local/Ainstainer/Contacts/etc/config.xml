@@ -5,6 +5,27 @@
         </Ainstainer_Contacts>
     </modules>
     <global>
+        <models>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Model</class>
+                <resourceModel>contact_resource</resourceModel>
+            </ainstainer_contacts>
+            <contact_resource>
+                <class>Ainstainer_Contacts_Model_Resource</class>
+                <entities>
+                    <feedback>
+                            <table>custom_feedback</table>
+                    </feedback>
+                </entities>
+            </contact_resource>
+        </models>
+        <resources>
+            <contact_setup>
+                <setup>
+                    <module>Ainstainer_Contacts</module>
+                </setup>
+            </contact_setup>
+        </resources>
         <helpers>
             <ainstainer_contacts>
                 <class>Ainstainer_Contacts_Helper</class>
@@ -17,7 +38,23 @@
                 </rewrite>
             </contacts>
         </helpers>
+        <blocks>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Block</class>
+            </ainstainer_contacts>
+        </blocks>
     </global>
+    <admin>
+        <routers>
+            <feedback_admin>
+                <use>admin</use>
+                <args>
+                    <module>Ainstainer_Contacts</module>
+                    <frontName>feedback_admin</frontName>
+                </args>
+            </feedback_admin>
+        </routers>
+    </admin>
     <frontend>
         <routers>
             <ainstainer_contacts>

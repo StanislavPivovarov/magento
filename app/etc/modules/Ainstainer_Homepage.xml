@@ -7,5 +7,9 @@
                 <Ainstainer_Contacts/>
             </depends>
         </Ainstainer_Homepage>
+        <Ainstainer_Indexer>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ainstainer_Indexer>
     </modules>
 </config>

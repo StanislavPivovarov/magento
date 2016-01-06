@@ -51,4 +51,32 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template
                             +PC9zdmc+';
         }
     }
+
+    /**
+     * Retrieve all active images
+     *
+     * @return mixed
+     */
+    public function images()
+    {
+        return Mage::getModel('ainstainer/banner')
+            ->getCollection()
+            ->getAllActiveImages();
+    }
+
+    /**
+     * Retrieve Banners Url With products witch have it
+     *
+     * @return mixed
+     */
+    public function productBanners()
+    {
+        return Mage::getResourceModel('catalog/product_collection')
+                 ->joinField('banner',
+                   'homepage_banner',
+                   'url',
+                     'banner_id=entity_id',
+                   null,
+                   'right');
+    }
 }

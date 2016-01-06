@@ -1,0 +1,29 @@
+<config>
+    <modules>
+        <Ainstainer_AShipping>
+            <version>0.6.0</version>
+        </Ainstainer_AShipping>
+    </modules>
+
+    <global>
+        <models>
+            <ashipping>
+                <class>Ainstainer_AShipping_Model</class>
+            </ashipping>
+        </models>
+    </global>
+    <default>
+        <carriers>
+            <ashipping>
+                <active>1</active>
+                <model>ashipping/shipping_fixed</model>
+                <name>Fixed</name>
+                <title>For Ainstainer</title>
+                <price>10</price>
+                <sort_order>10</sort_order>
+                <sallowspecific>0</sallowspecific>
+                <express_max_weight>1</express_max_weight>
+            </ashipping>
+        </carriers>
+    </default>
+</config>
