@@ -1,0 +1,27 @@
+<config>
+    <modules>
+        <Ainstainer_EventTest>
+            <version>0.6.0</version>
+        </Ainstainer_EventTest>
+    </modules>
+    <global>
+        <models>
+            <ainstainer_event_test>
+                <class>Ainstainer_EventTest_Model</class>
+            </ainstainer_event_test>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <catalog_product_load_after>
+                <observers>
+                    <ainstiner_event_test>
+                        <type>model</type>
+                        <class>ainstainer_event_test/observer</class>
+                        <method>catalogProductLoadAfterAddTestData</method>
+                    </ainstiner_event_test>
+                </observers>
+            </catalog_product_load_after>
+        </events>
+    </frontend>
+</config>

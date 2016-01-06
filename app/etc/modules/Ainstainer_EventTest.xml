@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Ainstainer_EventTest>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ainstainer_EventTest>
+    </modules>
+</config>
